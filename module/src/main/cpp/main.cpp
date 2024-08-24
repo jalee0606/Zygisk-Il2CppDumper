@@ -60,7 +60,7 @@ private:
             LOGI("detect game: %s, app_data_dir: %s(%d)", package_name, app_data_dir, strlen(app_data_dir));
             enable_hack = true;
             //remove_colon_and_after(app_data_dir)
-            LOGI();
+            //LOGI();
             game_data_dir = new char[strlen(app_data_dir) + 1];
             strcpy(game_data_dir, app_data_dir);
 
