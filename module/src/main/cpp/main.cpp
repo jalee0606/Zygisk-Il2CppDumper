@@ -57,7 +57,7 @@ private:
 
     void preSpecialize(const char *package_name, const char *app_data_dir) {
         if (strcmp(package_name, GamePackageName) == 0) {
-            LOGI("detect game: %s, app_data_dir: %s(%d)", package_name, app_data_dir, strlen(app_data_dir));
+            LOGI("detect game: %s, app_data_dir: %s(%lu)", package_name, app_data_dir, strlen(app_data_dir));
             enable_hack = true;
             //remove_colon_and_after(app_data_dir)
             //LOGI();
